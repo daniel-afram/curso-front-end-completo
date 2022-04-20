@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script>
+            var numeroInicial = prompt("Digite o primeiro número:");
+            var sinal = prompt("Digite o sinal da sua operação: + ou - ou * ou /");
+
+            while(sinal != '+' && sinal != '-' && sinal != '*' && sinal != '/'){
+                alert('Por favor informe um sinal válido!');
+                sinal = prompt("Digite o sinal da sua operação: + ou - ou * ou /");
+            }
+            
+            var numeroFinal = prompt("Digite o segundo número:");
+
+            numeroInicial = parseInt(numeroInicial);
+            numeroFinal = parseInt(numeroFinal);
+            
+            var resultado = 0;
+            
+            switch (sinal) {
+                case "+":
+                    resultado = numeroInicial + numeroFinal;
+                    break;
+                case "-":
+                    resultado = numeroInicial - numeroFinal;
+                    break;
+                case "*":
+                    resultado = numeroInicial * numeroFinal;
+                    break;
+                case "/":
+                    resultado = numeroInicial / numeroFinal;
+                    break;
+                default:
+                    break;
+            }
+
+            alert("O resultado é igual a: " + resultado);
+            
+        </script>
+    </body>
+</html>

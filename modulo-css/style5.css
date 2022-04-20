@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wraper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wraper .imagem{
+    width: 25%;
+}
+
+.imagem{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+    
+    .wraper .imagem{width: 33.3%}
+}
+
+@media screen and (max-width: 768px){
+    
+    .wraper .imagem{width: 50%}
+}
+
+@media screen and (max-width: 580px){
+    
+    .wraper .imagem{width: 100%}
+}

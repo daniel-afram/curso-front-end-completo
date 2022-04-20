@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 17px;
+    font-style: italic;
+    font-family: Verdana;
+}
+
+h3{
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.background{
+    width: 100%;
+    height: 400px;
+    background-image: url("landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bloco1{
+    width: 25%;
+    height: 25%;
+    display: inline-block;
+    background-color: red;
+}
+
+.bloco2{
+    width: 25%;
+    height: 25%;
+    display: inline-block;
+    background-color: blue;
+}
+
+.bloco3{
+    width: 25%;
+    height: 25%;
+    display: inline-block;
+    background-color: green;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.flex1{
+    flex: 0.5;
+    height: 200px;
+    background-color: blue;
+}
+
+.flex2{
+    flex: 0.5;
+    height: 800px;
+    background-color: red;
+}
+
+.flex3{
+    flex: 0.25;
+    height: 300px;
+    background-color: green;
+}
+
+@keyframes animacao {
+    from{background-color: blue;}
+    to{background-color: red;}
+}
+
+.blocoanimacao {
+    width: 400px;
+    height: 400px;
+    animation-name: animacao;
+    animation-duration: 5s;
+    
+}
